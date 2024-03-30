@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Your Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header role="banner">
-    <h1>Your Name</h1>
-  </header>
-  <nav role="navigation">
+
+<header role="heading">
+    <h1>My Portfolio</h1>
+</header>
+
+<nav role="navigation">
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
-  <main role="main">
+</nav>
+
+<main>
     <section id="about">
-      <img src="your-photo.jpg" alt="Your Photo">
-      <p>Brief description about you.</p>
+        <h2>About Me</h2>
+        <img src="https://img.freepik.com/premium-photo/cute-baby-panda-bear-with-big-eyes-3d-rendering-cartoon-illustration_691560-4924.jpg?w=360" alt="Profile Picture" role="img">
+        <p>I am a passionate web developer with experience in creating accessible websites.</p>
     </section>
-    <section id="work">
-      <h2>My Work</h2>
-      <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Responsive Website</li>
+            <li role="listitem">Project 2: Web Application</li>
+            <li role="listitem">Project 3: Accessibility Audit</li>
+        </ul>
     </section>
-  </main>
-  <footer role="contentinfo">
-    <p>Contact information</p>
-  </footer>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at example@email.com</p>
+    </section>
+</main>
+
 </body>
 </html>
